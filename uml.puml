@@ -1,0 +1,39 @@
+@startuml
+class Animales {
++ nombre :String
++ dice: String
+}
+class Ballena {
++ nombre:String
+}
+class Perro {
++ nombre:String
++ dice: String
++ Actitud: String
+}
+class Pinguino {
++ nombre:String
+}
+class Loro {
++ nombre:String
++ dice: String
+}
+class Perro_Fiero {
++ nombre:String
++ dice: String
++ Actitud: String
+}
+class Perro_Manso {
++ nombre:String
++ dice: String
++ Actitud: String
+}
+
+Animales <|-- Perro
+Animales <|-- Pinguino
+Animales <|-- Ballena
+Animales <|-- Loro
+Perro <|-- Perro_Fiero
+Perro <|-- Perro_Manso
+
+@enduml
